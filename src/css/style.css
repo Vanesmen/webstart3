@@ -49,7 +49,7 @@ main {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 18px 30px;
+  padding: 18px 30px 17px 30px;
   font-size: 13px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -101,6 +101,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 3px;
   font-size: 13px;
   color: #333333;
   font-family: 'Museo Sans Light', sans-serif;
@@ -113,6 +114,7 @@ main {
 
 .navbar__phone {
   display: inline-block;
+  margin-bottom: 3px;
   color: #333333;
   font-size: 20px;
   text-decoration: none;
@@ -143,6 +145,11 @@ main {
   display: flex;
 }
 
+.hero-img {
+  width: 655px;
+  margin-left: 11px;
+}
+
 .hero-text {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
@@ -150,9 +157,11 @@ main {
 }
 
 .hero-text__title {
+  margin-top: 25px;
+  margin-left: -5px;
   font-size: 41px;
   line-height: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -181,6 +190,8 @@ main {
 }
 
 .hero-list__image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 40px;
   height: 40px;
   border: 2px solid #ffd200;
@@ -198,7 +209,13 @@ main {
 }
 
 .hero-list__text {
-  max-width: 300px;
+  max-width: 245px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  font-weight: 600;
 }
 
 @media (max-width: 1200px) {
