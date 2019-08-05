@@ -214,6 +214,7 @@ main {
   .hero-img {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
   .hero-block {
     -webkit-box-orient: vertical;
