@@ -3,6 +3,8 @@
   background-position: center right
   background-size: contain
   position: relative
+  *
+    box-sizing: border-box
   &:before
     content: ""
     width: 50%
@@ -15,14 +17,16 @@
     width: 50%
     padding-right: 70px
     position: relative
+    margin-left: -20px
   &__title
     max-width: 360px
     line-height: 35px
-    margin-bottom: 24px
+    margin-bottom: 16px
   &__subtitle
     display: block
     max-width: 250px
-    margin-bottom: 30px
+    margin-bottom: 33px
+    +reg
   &__input
     margin-bottom: 30px
     width: 240px
@@ -31,19 +35,60 @@
   &__button
     width: 100%
     min-height: 70px
+    font-size: 16px
+  &-connect
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-top: 30px
+    &__info, &__number-info
+      width: 228px
+      font-size: 17px
+      line-height: 24px
+    &__number-info
+      width: 196px;
+    &__number
+      white-space: nowrap
+      font-size: 15px
+      +bold
+
+    
+
 @media (max-width: 1200px)
   .offer
     background-size: cover
+    &-block
+      margin-left: 0
     &__input
       width: 100%
       margin-bottom: 10px
+@media (max-width: 1050px)
+  .offer
+    &-connect
+      flex-direction: column
+      align-items: center
+      text-align: center
 @media (max-width: 768px)
   .offer
     background: white
+    padding: 33px 0
     &-block
       width: 100%
       padding-right: 0
+    &__title
+      max-width: 270px
+      line-height: 23px
+    &__subtitle
+      margin-bottom: 25px
     &__input
       width: 100%
       margin-bottom: 10px
+    &__button
+      font-size: 15px
+    &-connect
+      align-items: flex-start
+      text-align: left
+      margin-top: 19px
+      &__number-info
+        margin-top: 8px
     
