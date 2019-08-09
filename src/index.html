@@ -25,7 +25,7 @@
                         <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
                     </div>
 
-                    <button class="button navbar__button">Перезвоните мне</button>
+                    <button class="button navbar__button" id="button1">Перезвоните мне</button>
                 </div>
             </div>
         </div>
@@ -87,6 +87,32 @@
             </div>
         </section>
     </main>
+
+    <div class="modal" id="modal1">
+        <div class="modal-dialog">
+            <button class="modal-dialog__close" id="close1">&times;</button>
+            <h4 class="modal-dialog__title">
+                <span>Узнайте точную стоимость</span>
+                <span>ремонта по телефону!</span>
+            </h4>
+            <div class="modal-dialog__hit">
+                <span>Заполните поля ниже - мы свяжемся с вами</span>
+            </div>
+            <div class="modal-dialog__form">
+                <div class="input modal-dialog__input" placeholder="Ваше имя"></div>
+                <div class="input modal-dialog__input" placeholder="Ваш телефон"></div>
+                <button class="button modal-dialog__button">Узнать стоимость</button>
+            </div>
+
+            <div class="modal-dialog__description">
+                <div class="span modal-dialog__description-hit">Или вы можете перезвонить нам сами по телефону</div>
+                <span class="modal-dialog__description-number">+7 (8182) 42-51-31</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
